@@ -192,7 +192,17 @@ function startCrossZero() {
 
             const makeTr = document.createElement('tr');
 
-  
+            for (let j = 0; j < 3; j += 1) {
+
+                const makeTd = document.createElement('td');
+
+                makeTd.classList.add('ceil');
+
+                setStyle(makeTd);
+
+                makeTr.appendChild(makeTd)
+
+            }
 
             getTbl.appendChild(makeTr);
             // setStyle();
