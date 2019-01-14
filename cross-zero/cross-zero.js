@@ -54,7 +54,14 @@ function startCrossZero() {
     };
 
 
- 
+    function deleteProgress() {
+
+        const getAllCeils = getTbl.querySelectorAll('.ceil');
+
+
+
+    };
+
 
 
 
