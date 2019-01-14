@@ -134,6 +134,15 @@ function startCrossZero() {
     };
 
 
+    function addInCeil() {
+
+        if (checkZero(this)) {
+
+
+
+        }
+
+    };
 
 
 
