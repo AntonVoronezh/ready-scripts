@@ -72,6 +72,17 @@ function startCrossZero() {
 
 
 
+    function checkVictory() {
+
+        const $ = getTbl.querySelectorAll('.ceil');
+
+
+
+
+
+    };
+
+
 
 
 
