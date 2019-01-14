@@ -156,6 +156,11 @@ function startCrossZero() {
 
 
 
+    function checkZero(argElem) {
+
+        return argElem.innerHTML === '' ? true : false;
+
+    };
 
 
 
