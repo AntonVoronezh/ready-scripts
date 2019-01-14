@@ -169,7 +169,15 @@ function startCrossZero() {
 
         getBtn.addEventListener('click', function () {
 
+            getAllCeils.forEach(elem => {
 
+                elem.innerHTML = '';
+
+                getWinner.innerHTML = '?';
+
+                makeProgress();
+
+            });
 
 
         });
