@@ -163,6 +163,18 @@ function startCrossZero() {
     };
 
 
+    function makeRefresh() {
+
+        const getAllCeils = getTbl.querySelectorAll('.ceil');
+
+        getBtn.addEventListener('click', function () {
+
+
+
+
+        });
+
+    };
 
 
 
