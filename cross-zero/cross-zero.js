@@ -119,7 +119,19 @@ function startCrossZero() {
 
 
 
+    function writeGamer() {
 
+        if (!flag) {
+
+            getGamer.innerHTML = 'X';
+
+        } else {
+
+            getGamer.innerHTML = 'O';
+
+        }
+
+    };
 
 
 
