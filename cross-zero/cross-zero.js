@@ -41,7 +41,15 @@ function startCrossZero() {
 
         const getAllCeils = getTbl.querySelectorAll('.ceil');
 
+        getAllCeils.forEach(elem => {
 
+            elem.addEventListener('click', addInCeil);
+
+            elem.addEventListener('click', writeGamer);
+
+            elem.addEventListener('click', checkVictory);
+
+        });
 
     };
 
