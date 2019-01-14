@@ -138,7 +138,17 @@ function startCrossZero() {
 
         if (checkZero(this)) {
 
+            if (flag) {
 
+                this.innerHTML = 'X';
+                flag = false;
+
+            } else {
+
+                this.innerHTML = 'O';
+                flag = true;
+
+            }
 
         }
 
