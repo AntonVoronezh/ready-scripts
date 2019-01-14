@@ -212,7 +212,17 @@ function startCrossZero() {
     };
 
 
+    function setStyle(argElem) {
 
+        argElem.style.cssText = '\
+            border: 1px solid #000000;\
+            width: 100px;\
+            height: 100px;\
+            text-align: center;\
+            font-size: 40px;\
+        ';
+
+    };
 
 
 };
