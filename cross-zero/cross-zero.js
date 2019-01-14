@@ -111,6 +111,11 @@ function startCrossZero() {
     };
 
 
+    function writeWinner(argStr) {
+
+        getWinner.innerHTML = argStr;
+
+    };
 
 
 
