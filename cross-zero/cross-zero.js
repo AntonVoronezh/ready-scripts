@@ -186,6 +186,21 @@ function startCrossZero() {
 
 
 
+    function makeClearField() {
+
+        for (let i = 0; i < 3; i += 1) {
+
+            const makeTr = document.createElement('tr');
+
+  
+
+            getTbl.appendChild(makeTr);
+            // setStyle();
+
+        }
+
+    };
+
 
 
 
