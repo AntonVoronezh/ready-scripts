@@ -90,6 +90,21 @@ function startCrossZero() {
         ];
 
 
+        winCombinations.forEach(elem => {
+
+            if (
+                $[elem[0]].innerHTML === $[elem[1]].innerHTML &&
+                $[elem[1]].innerHTML === $[elem[2]].innerHTML &&
+                $[elem[0]].innerHTML !== ''
+            ) {
+
+                writeWinner($[elem[0]].innerHTML);
+
+                deleteProgress();
+
+            }
+
+        });
 
 
 
