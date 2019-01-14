@@ -37,6 +37,14 @@ function startCrossZero() {
     };
 
 
+    function makeProgress() {
+
+        const getAllCeils = getTbl.querySelectorAll('.ceil');
+
+
+
+    };
+
 
  
 
