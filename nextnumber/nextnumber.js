@@ -259,6 +259,16 @@ border: 1px solid #000000;
 
     };
 
+    function makeWinner() {
+
+        const getDiv = getPlace.querySelector('.end-time');
+        const getSpan = getPlace.querySelector('.result');
+
+        getDiv.innerHTML = '<h3>Вы выиграли этот раунд</h3>';
+
+
+
+    };
 
 };
 
