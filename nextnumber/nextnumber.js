@@ -266,7 +266,13 @@ border: 1px solid #000000;
 
         getDiv.innerHTML = '<h3>Вы выиграли этот раунд</h3>';
 
+        getSpan.innerHTML = `<b>${setup(round).sqr}</b>`;
 
+        round += 1;
+
+        getBtn.innerHTML = 'Играть дальше';
+
+        makeBtnDis();
 
     };
 
