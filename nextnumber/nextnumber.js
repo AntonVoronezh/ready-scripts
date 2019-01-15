@@ -77,6 +77,13 @@ background-color: gray;
     });
 
 
+    function createTable(argArr, argDiv) {
+
+        let makeTr;
+
+        for (let i = 0; i < argArr.length; i += 1) {
+
+
 
 
 
