@@ -249,6 +249,13 @@ border: 1px solid #000000;
     };
 
 
+    function shuffle(argArr) {
+
+
+
+        return argArr.sort(compareRandom);
+
+    };
 
 
 };
