@@ -178,6 +178,11 @@ background-color: gray;
 
     };
 
+    function stopTimer() {
+
+        window.clearInterval(window.timerId);
+
+    };
 
 
 
