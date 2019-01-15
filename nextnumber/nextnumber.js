@@ -55,6 +55,14 @@ background-color: gray;
 
 
 
+    };
+
+    const getPlace = document.getElementById('next-number');
+    const getTbl = getPlace.querySelector('.tbl');
+    const getBtn = getPlace.querySelector('.btn');
+    const elem2 = getPlace.querySelector('.end-time2');
+
+
 
 
 
