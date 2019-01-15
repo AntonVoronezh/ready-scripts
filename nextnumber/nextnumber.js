@@ -153,6 +153,11 @@ background-color: gray;
 
 
 
+    function startTimer() {
+
+        window.timerId = window.setInterval(timer, 1000);
+
+    };
 
 
 
