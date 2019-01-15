@@ -201,6 +201,13 @@ background-color: gray;
 
         getDiv.innerHTML = '<h3>Конец игры</h3>';
 
+        elem2.style.display = 'block';
+
+        getBtn.innerHTML = 'Начать заново';
+
+        round = 2;
+
+        makeBtnDis();
 
     };
 
