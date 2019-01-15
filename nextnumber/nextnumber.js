@@ -191,6 +191,16 @@ background-color: gray;
         const getSpan = getPlace.querySelector('.result');
         const getDiv = getPlace.querySelector('.end-time');
 
+        getAllTd.forEach(elem => {
+
+            elem.classList.add('end');
+
+        });
+
+        getSpan.innerHTML = getAllActive.length;
+
+        getDiv.innerHTML = '<h3>Конец игры</h3>';
+
 
     };
 
