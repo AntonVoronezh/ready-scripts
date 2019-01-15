@@ -168,7 +168,13 @@ background-color: gray;
         elem.innerHTML = newNum;
 
 
+        if (newNum === 0) {
 
+            stopTimer();
+
+            endGame();
+
+        }
 
     };
 
