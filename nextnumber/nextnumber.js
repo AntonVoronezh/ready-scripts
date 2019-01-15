@@ -84,7 +84,22 @@ background-color: gray;
         for (let i = 0; i < argArr.length; i += 1) {
 
 
+            if (i === 0 || i % argDiv === 0) {
+                makeTr = document.createElement('tr');
+            }
 
+            let makeTd = document.createElement('td');
+
+            makeTd.innerHTML = argArr[i];
+
+            setStyle(makeTd);
+
+            makeTr.appendChild(makeTd);
+
+            if (i === 0 || i % argDiv === 0) {
+                getTbl.appendChild(makeTr);
+            }
+        }
 
 
 
