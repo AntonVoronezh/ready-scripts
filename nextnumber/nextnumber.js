@@ -102,6 +102,15 @@ background-color: gray;
         }
 
 
+        makeActive();
+        startTimer();
+        makeBtnDis()
+
+    };
+
+    createTable(shuffle(range(1, setup(round).sqr)), round);
+
+
 
 
 
