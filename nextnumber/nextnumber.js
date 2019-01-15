@@ -9,6 +9,16 @@ function nextNumber() {
 
     init();
 
+    function setup(argNum) {
+
+        return {
+            sqr: argNum * argNum,
+            time: argNum * argNum * 2
+        };
+
+    };
+
+
 
 
 
