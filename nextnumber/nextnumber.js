@@ -234,7 +234,15 @@ border: 1px solid #000000;
 
     };
 
+    function range(argMin, argMax) {
 
+        const result = [];
+
+
+
+        return result;
+
+    };
 
 
 
