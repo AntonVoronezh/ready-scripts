@@ -139,7 +139,13 @@ background-color: gray;
         const getAllActive = getTbl.querySelectorAll('.active');
 
 
+        if (getAllActive.length + 1 === round * round) {
 
+            makeWinner();
+
+            stopTimer();
+
+        }
 
         return getAllActive.length + 1;
 
