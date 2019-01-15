@@ -118,7 +118,13 @@ background-color: gray;
 
             elem.addEventListener('click', function addActive() {
 
+                if (isNext(+elem.innerHTML) === +elem.innerHTML) {
 
+                    elem.classList.add('active');
+
+                    elem.removeEventListener('click', addActive);
+
+                }
 
             });
 
