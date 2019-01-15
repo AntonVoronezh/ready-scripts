@@ -133,6 +133,17 @@ background-color: gray;
     };
 
 
+    function isNext(argNum) {
+
+
+        const getAllActive = getTbl.querySelectorAll('.active');
+
+
+
+
+        return getAllActive.length + 1;
+
+    };
 
 
 
