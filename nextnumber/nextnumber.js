@@ -238,7 +238,11 @@ border: 1px solid #000000;
 
         const result = [];
 
+        for (let i = argMin; i < argMax + 1; i += 1) {
 
+            result.push(i);
+
+        }
 
         return result;
 
