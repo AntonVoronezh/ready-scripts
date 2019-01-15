@@ -41,6 +41,19 @@ function nextNumber() {
 
 
 
+        getStyle.innerHTML = getStyle.innerHTML + `
+.tbl {
+    margin: 0 auto;
+}
+.active {
+background-color: red;
+color: #fff;
+}
+.end {
+background-color: gray;
+}`;
+
+
 
 
 
