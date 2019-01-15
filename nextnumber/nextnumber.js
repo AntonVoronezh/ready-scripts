@@ -159,6 +159,19 @@ background-color: gray;
 
     };
 
+    function timer() {
+
+        const elem = getPlace.querySelector('.timer');
+
+        let newNum = +elem.innerHTML - 1;
+
+        elem.innerHTML = newNum;
+
+
+
+
+    };
+
 
 
 
