@@ -19,6 +19,25 @@ function nextNumber() {
     };
 
 
+    function init() {
+
+
+
+        getElem.innerHTML = `<h1>Следующее число </h1>
+    aka AntonVoronezh
+     <br> <br> <br>
+    <table class="tbl"></table><br>
+    <div class="end-time">Осталось <span class="timer">${setup(round).time}</span> секунд</div><br>
+    <div class="end-time2">Ваш результат <span class="result"></span> из ${setup(round).sqr}</div><br>
+    <button class="btn">начать заново</button>
+    `;
+
+        getElem.style.border = '1px solid #000';
+        getElem.style.textAlign = 'center';
+        getElem.style.padding = '20px';
+
+        const getStyle = document.querySelector('style');
+
 
 
 
