@@ -110,6 +110,21 @@ background-color: gray;
 
     createTable(shuffle(range(1, setup(round).sqr)), round);
 
+    function makeActive() {
+
+        const getAllTd = getTbl.querySelectorAll('td');
+
+        getAllTd.forEach(elem => {
+
+            elem.addEventListener('click', function addActive() {
+
+
+
+            });
+
+        });
+
+    };
 
 
 
