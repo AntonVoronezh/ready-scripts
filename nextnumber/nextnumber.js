@@ -184,6 +184,15 @@ background-color: gray;
 
     };
 
+    function endGame() {
+
+        const getAllTd = getTbl.querySelectorAll('td');
+        const getAllActive = getTbl.querySelectorAll('.active');
+        const getSpan = getPlace.querySelector('.result');
+        const getDiv = getPlace.querySelector('.end-time');
+
+
+    };
 
 
 
