@@ -211,7 +211,15 @@ background-color: gray;
 
     };
 
+    function makeBtnDis() {
 
+        if (getBtn.disabled) {
+            getBtn.disabled = false;
+        } else {
+            getBtn.disabled = true;
+        }
+
+    };
 
 
 
