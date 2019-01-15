@@ -221,7 +221,18 @@ background-color: gray;
 
     };
 
+    function setStyle(argElem) {
 
+        argElem.style.cssText = `
+border: 1px solid #000000;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 35px;
+    cursor: pointer;
+`;
+
+    };
 
 
 
