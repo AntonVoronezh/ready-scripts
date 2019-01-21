@@ -13,6 +13,18 @@ function makeCalendar() {
     const calendarPrev = calendar.querySelector('.calendar__prev');
     const calendarNext = calendar.querySelector('.calendar__next');
 
+    const dateInint = new Date();
+
+    const year = setupDates().year,
+        month = setupDates().month,
+        day = setupDates().day,
+        date = setupDates().date;
+
+    let monthNumber = month;
+    let yearNumber = year;
+    const arrMonths = ['январь', 'февраль', 'март', 'апрель', 'март', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь']
+
+    createDatesTable(year, month, date, calendarDates);
 
 
 
