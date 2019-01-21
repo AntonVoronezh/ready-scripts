@@ -164,7 +164,31 @@ function makeCalendar() {
 
     };
 
+    function makeArrWidthEmptys(argArr, argFlag, argNum) {
 
+        if (argFlag === 'start') {
+
+            for (let i = 0; i < argNum; i += 1) {
+
+                argArr.unshift("");
+
+            }
+
+        }
+
+        if (argFlag === 'finish') {
+
+            for (let i = 0; i < argNum; i += 1) {
+
+                argArr.push("");
+
+            }
+
+        }
+
+        return argArr;
+
+    };
 
 
 
