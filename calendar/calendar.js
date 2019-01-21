@@ -246,6 +246,13 @@ function makeCalendar() {
 
     };
 
+    function getLastDayOfMonth(argYear, argMonth) {
+
+        const date = new Date(argYear, argMonth + 1, 0);
+
+        return date.getDate();
+
+    };
 
 
 
