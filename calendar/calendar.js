@@ -254,7 +254,20 @@ function makeCalendar() {
 
     };
 
+    function setupDates(argDate) {
 
+        if (argDate === undefined) {
+            argDate = dateInint;
+        }
+
+        return {
+            year: argDate.getFullYear(),
+            month: argDate.getMonth(),
+            day: argDate.getDay(),
+            date: argDate.getDate()
+        };
+
+    };
 
 
 
