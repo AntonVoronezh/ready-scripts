@@ -238,6 +238,13 @@ function makeCalendar() {
 
     };
 
+    function getNumberOfDay(argYear, argMonth, argDate) {
+
+        const date = new Date(argYear, argMonth, argDate);
+
+        return date.getDay();
+
+    };
 
 
 
