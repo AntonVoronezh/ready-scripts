@@ -26,6 +26,20 @@ function makeCalendar() {
 
     createDatesTable(year, month, date, calendarDates);
 
+    function createDatesTable(argYear, argMonth, argDate) {
+
+        const daysInMonth = getLastDayOfMonth(argYear, argMonth);
+
+        const firstDay = 1;
+
+        const NumberOfFirstDayRussianVariant = getNumberOfDayRussianVariant(argYear, argMonth, firstDay);
+
+        const NumberOfLastDayRussianVariant = getNumberOfDayRussianVariant(argYear, argMonth, daysInMonth);
+
+        const countEmptyStartMonth = getCountEmpty(NumberOfFirstDayRussianVariant, 'start');
+
+
+    };
 
 
 
