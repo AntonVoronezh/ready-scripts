@@ -269,6 +269,34 @@ function makeCalendar() {
 
     };
 
+    function makeMarking() {
+
+        calendar.innerHTML = `
+        <div class="calendar__wrap">
+        <div class="calendar__info"></div>
+        <div class="calendar__navigation">
+            <a href="#" class="calendar__link  calendar__prev">&larr;</a>
+            <a href="#" class="calendar__link  calendar__next">&rarr;</a>
+        </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Пн</td>
+                    <td>Вт</td>
+                    <td>Ср</td>
+                    <td>Чт</td>
+                    <td>Пт</td>
+                    <td>Сб</td>
+                    <td>Вс</td>
+                </tr>
+            </thead>
+            <tbody class="calendar__dates"></tbody>
+        </table>
+        `;
+
+    };
 
 
 
