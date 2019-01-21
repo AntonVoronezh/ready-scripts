@@ -48,7 +48,9 @@ function makeCalendar() {
         
         const chunkedArr = chunkArr(arrNumbersWidthFinishEmptys);
        
+        makeTableFromArr(chunkedArr, calendarDates, argDate, argYear, argMonth);
 
+        makeInfo(argYear, argMonth, calendarInfo);
 
     };
 
