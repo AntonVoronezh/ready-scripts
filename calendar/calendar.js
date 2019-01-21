@@ -224,6 +224,20 @@ function makeCalendar() {
 
     };
 
+    function getNumberOfDayRussianVariant(argYear, argMonth, argDate) {
+
+        let result = getNumberOfDay(argYear, argMonth, argDate);
+
+        if (result === 0) {
+
+            result = 7;
+
+        }
+
+        return result;
+
+    };
+
 
 
 
