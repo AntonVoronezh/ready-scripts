@@ -77,7 +77,25 @@ function makeCalendar() {
 
     };
 
+    function getNextMonth() {
 
+        clearTable();
+
+        if (monthNumber < arrMonths.length - 1) {
+
+            monthNumber += 1;
+
+        } else {
+
+            yearNumber += 1;
+
+            monthNumber = 0;
+
+        }
+
+        createDatesTable(yearNumber, monthNumber, date, calendarDates);
+
+    };
 
 
 
