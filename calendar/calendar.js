@@ -109,7 +109,11 @@ function makeCalendar() {
 
     };
 
+    function ucFirst(argStr) {
 
+        return argStr[0].toUpperCase() + argStr.slice(1);
+
+    };
 
 
 
