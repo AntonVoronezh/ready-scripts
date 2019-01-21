@@ -58,6 +58,24 @@ function makeCalendar() {
 
     calendarPrev.addEventListener('click', getPrevMonth);
 
+    function getPrevMonth() {
+
+        clearTable();
+
+        if (monthNumber > 0) {
+
+            monthNumber -= 1;
+
+        } else {
+
+            yearNumber -= 1;
+
+            monthNumber = arrMonths.length - 1;
+        }
+
+        createDatesTable(yearNumber, monthNumber, date, calendarDates);
+
+    };
 
 
 
