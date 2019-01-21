@@ -38,6 +38,17 @@ function makeCalendar() {
 
         const countEmptyStartMonth = getCountEmpty(NumberOfFirstDayRussianVariant, 'start');
 
+        const countEmptyFinishMonth = getCountEmpty(NumberOfLastDayRussianVariant, 'finish');
+
+        const arrNumbers = makeArr(firstDay, daysInMonth);
+
+        const arrNumbersWidthStartEmptys = makeArrWidthEmptys(arrNumbers, 'start', countEmptyStartMonth);
+
+        const arrNumbersWidthFinishEmptys = makeArrWidthEmptys(arrNumbersWidthStartEmptys, 'finish', countEmptyFinishMonth);
+        
+        const chunkedArr = chunkArr(arrNumbersWidthFinishEmptys);
+       
+
 
     };
 
