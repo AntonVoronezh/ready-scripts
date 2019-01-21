@@ -298,6 +298,39 @@ function makeCalendar() {
 
     };
 
+    function setStyle() {
 
+        const style = document.querySelector('style');
+
+        style.innerHTML = style.innerHTML + `
+        #calendar {
+            display: inline-block;
+            border: 1px solid #ccc;
+            padding: 3px;
+        }
+
+        .calendar__item {
+            border: 1px solid #ccc;
+            width: 25px;
+            height: 15px;
+            text-align: center;
+        }
+
+        .calendar__item--active {
+            color: white;
+            background-color: red;
+        }
+
+        .calendar__link {
+            text-decoration: none;
+        }
+
+        .calendar__wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+            `;
+
+    };
 
 };
