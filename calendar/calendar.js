@@ -97,7 +97,11 @@ function makeCalendar() {
 
     };
 
+    function clearTable() {
 
+        calendarDates.innerHTML = '';
+
+    };
 
 
 
