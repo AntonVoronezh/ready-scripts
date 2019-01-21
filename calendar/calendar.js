@@ -204,6 +204,25 @@ function makeCalendar() {
 
     };
 
+    function getCountEmpty(argNum, argFlag) {
+
+        let result = 0;
+
+        if (argFlag === 'start') {
+
+            result = argNum - 1;
+
+        }
+
+        if (argFlag === 'finish') {
+
+            result = 7 - argNum;
+
+        }
+
+        return result;
+
+    };
 
 
 
