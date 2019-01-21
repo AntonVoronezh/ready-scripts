@@ -103,6 +103,11 @@ function makeCalendar() {
 
     };
 
+    function makeInfo(argYear, argMonth, argElem) {
+
+        argElem.innerHTML = ucFirst(arrMonths[argMonth]) + ' ' + argYear;
+
+    };
 
 
 
