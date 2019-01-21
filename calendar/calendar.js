@@ -190,6 +190,19 @@ function makeCalendar() {
 
     };
 
+    function makeArr(argFrom, argTo) {
+
+        const arr = [];
+
+        for (let i = argFrom; i <= argTo; i += 1) {
+
+            arr.push(i)
+
+        }
+
+        return arr;
+
+    };
 
 
 
