@@ -54,6 +54,10 @@ function makeCalendar() {
 
     };
 
+    calendarNext.addEventListener('click', getNextMonth);
+
+    calendarPrev.addEventListener('click', getPrevMonth);
+
 
 
 
