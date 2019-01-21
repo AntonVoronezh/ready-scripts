@@ -115,6 +115,19 @@ function makeCalendar() {
 
     };
 
+    function makeTableFromArr(argArr, argElem, argDate, argYear, argMonth) {
+
+        for (let i = 0; i < argArr.length; i += 1) {
+
+            const tr = document.createElement('tr');
+
+
+
+            argElem.appendChild(tr);
+
+        }
+
+    };
 
 
 
