@@ -287,7 +287,25 @@
     }
 
 
+    function makeInputsForElements(argObj) {
 
+        for (let value in argObj) {
+
+            const input = createElem('input');
+
+            input.type = 'text';
+
+            input.placeholder = argObj[value];
+
+            input.classList.add('area__input');
+
+            input.dataset.key = value;
+
+            area.appendChild(input);
+
+        }
+
+    };
 
 
 
