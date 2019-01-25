@@ -97,7 +97,25 @@
     makeList(geometricShapes);
 
 
+    function makeList(argObj) {
 
+        argObj.forEach((elem, i) => {
+
+            const li = createElem('li');
+
+            li.classList.add('area__item');
+
+            li.dataset.number = i;
+
+            li.innerHTML = ucFirst(elem.shape);
+
+            li.addEventListener('click', makePage);
+
+            list.appendChild(li);
+
+        });
+
+    };
 
 
 
