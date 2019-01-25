@@ -321,7 +321,11 @@
     };
 
 
+    function clearPage(argElem = area) {
 
+        argElem.innerHTML = '';
+
+    };
 
 
 
