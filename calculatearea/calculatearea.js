@@ -308,7 +308,17 @@
     };
 
 
+    function addTitle(argStr) {
 
+        const title = createElem('div');
+
+        title.classList.add('area__title');
+
+        title.innerHTML = ucFirst(argStr);
+
+        area.appendChild(title);
+
+    };
 
 
 
