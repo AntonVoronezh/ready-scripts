@@ -133,7 +133,15 @@
     };
 
 
+    function addWrap() {
 
+        const div = createElem('div');
+
+        div.classList.add('area__wrap');
+
+        area.appendChild(div);
+
+    };
 
 
 
