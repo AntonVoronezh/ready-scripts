@@ -220,6 +220,22 @@
     };
 
 
+    function printAnswer(argAns) {
+
+        const div = createElem('div');
+
+        div.innerHTML = `Ответ: ${argAns}`;
+
+        div.classList.add('area__answer');
+
+        const wrap = document.querySelector('.area__wrap');
+
+        wrap.appendChild(div);
+
+        goIndex();
+
+    };
+
 
 
 
