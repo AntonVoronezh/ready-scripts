@@ -352,6 +352,85 @@
     };
 
 
+    function setStyle() {
+
+        const style = document.querySelector('style');
+
+        style.innerHTML = style.innerHTML + `
+            #area {
+                border: 1px solid #ccc;
+                min-width: 150px;
+                max-width: 250px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .area__list {
+                list-style: none;
+                padding: 0;
+            }
+
+            .area__item {
+                cursor: pointer;
+                margin-bottom: 5px;
+                padding: 1px;
+            }
+
+            .area__item:hover {
+                color: blue;
+            }
+
+            .area__item:hover::after {
+                content: "  \\2192";
+                color: red;
+            }
+
+            .area__error {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                color: red;
+                text-align: center;
+            }
+
+            .area__answer {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                color: green;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .area__title {
+                font-size: 18px;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            .area__input {
+                margin-top: 10px;
+                padding: 5px;
+                width: 90%;
+                border: 1px solid blue;
+            }
+
+            .area__calculate {
+                margin-top: 10px;
+                margin-left: 0 auto;
+                margin-right: 0 auto;
+            }
+
+            .area__wrap {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            `;
+
+    };
 
 
 })();
