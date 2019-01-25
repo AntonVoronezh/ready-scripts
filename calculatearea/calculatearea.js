@@ -173,7 +173,34 @@
     };
 
 
+    function calculate(formula) {
 
+        const flag = validate();
+
+        if (flag) {
+
+            const allInputs = area.querySelectorAll('input');
+
+            const arr = [];
+
+            allInputs.forEach(elem => {
+
+                arr.push(+elem.value);
+
+            });
+
+            const answer = formula(...arr);
+
+            printAnswer(answer);
+
+
+        } else {
+
+            errorMessage();
+
+        }
+
+    };
 
 
 
