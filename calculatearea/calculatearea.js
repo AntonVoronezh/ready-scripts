@@ -255,6 +255,29 @@
     };
 
 
+    function validate() {
+
+        const allInputs = area.querySelectorAll('input');
+
+        const arr = [];
+
+        allInputs.forEach(elem => {
+
+            if (!isNumeric(+elem.value) || elem.value === '') {
+
+                arr.push(false);
+
+            } else {
+
+                arr.push(true);
+
+            }
+
+        });
+
+        return arr.every(elem => elem === true);
+
+    };
 
 
 
