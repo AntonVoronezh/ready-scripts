@@ -203,7 +203,21 @@
     };
 
 
+    function errorMessage() {
 
+        const div = createElem('div');
+
+        div.innerHTML = `Некорректные данные. <br> Попробуйте еще раз.`;
+
+        div.classList.add('area__error');
+
+        const wrap = document.querySelector('.area__wrap');
+
+        wrap.appendChild(div);
+
+        goIndex();
+
+    };
 
 
 
