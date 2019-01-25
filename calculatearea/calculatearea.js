@@ -144,6 +144,33 @@
     };
 
 
+    function addButton(formula) {
+
+        const button = createElem('button');
+
+        button.classList.add('area__calculate');
+
+        button.innerHTML = 'рассчитать';
+
+        button.addEventListener('click', () => {
+
+            const elem = document.querySelector('.area__wrap');
+
+            if (elem) {
+
+                area.removeChild(elem);
+
+            }
+
+            addWrap();
+
+            calculate(formula);
+
+        });
+
+        area.appendChild(button);
+
+    };
 
 
 
