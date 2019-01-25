@@ -342,6 +342,14 @@
     };
 
 
+    function makeMarking() {
+
+        area.innerHTML = `
+            <div class="area__title">Рассчитать площадь фигур</div>
+            <ul class="area__list"></ul>
+            `;
+
+    };
 
 
 
