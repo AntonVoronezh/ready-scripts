@@ -118,6 +118,19 @@
     };
 
 
+    function makePage() {
+
+        const { shape, formula, elements } = geometricShapes[this.dataset.number];
+
+        clearPage();
+
+        addTitle(shape);
+
+        makeInputsForElements(elements);
+
+        addButton(formula);
+
+    };
 
 
 
