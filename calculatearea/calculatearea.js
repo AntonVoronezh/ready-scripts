@@ -237,7 +237,22 @@
     };
 
 
+    function goIndex() {
 
+        const button = createElem('button');
+
+        button.innerHTML = 'на главную';
+
+        button.addEventListener('click', () => {
+
+            calculateArea();
+        });
+
+        const wrap = document.querySelector('.area__wrap');
+
+        wrap.appendChild(button);
+
+    };
 
 
 
