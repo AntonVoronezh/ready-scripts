@@ -119,7 +119,23 @@
 
     };
 
-    
+    function checklistFunc(argNum) {
+
+        const getAllBox = getUl.querySelectorAll('.checklist__ckeckbox');
+
+        getAllBox.forEach(elem => {
+
+            if (elem.dataset.number === argNum) {
+
+                elem.disabled = true;
+
+                addStrike(argNum);
+
+            }
+
+        });
+
+    };
 
    
 
