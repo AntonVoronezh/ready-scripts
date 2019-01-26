@@ -170,6 +170,44 @@
     };
 
 
+    function textFunc(argNum) {
+
+        const getAllBox = getUl.querySelectorAll('.checklist__text');
+
+        const getAllBox2 = getUl.querySelectorAll('.checklist__back-input');
+
+        for (let i = 0; i < getAllBox.length; i += 1) {
+
+            let elem = getAllBox[i];
+
+            if (elem.dataset.number === argNum) {
+
+                elem.classList.add('checklist__none');
+
+                getAllBox2[i].classList.remove('checklist__none');
+
+                getAllBox2[i].addEventListener('keydown', (event) => {
+
+                    if (event.keyCode === 13 && getAllBox2[i].value !== '') {
+
+                        elem.innerHTML = getAllBox2[i].value;
+
+                        getAllBox2[i].classList.add('checklist__none');
+
+                        elem.classList.remove('checklist__none');
+
+                    }
+
+                });
+
+                break;
+
+            }
+
+
+        }
+
+    };
 
 
 
