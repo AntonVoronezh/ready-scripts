@@ -96,7 +96,12 @@
 
     };
 
-    
+    function appendElem(argElem1, argElem2) {
+
+        argElem1.appendChild(argElem2);
+
+    };
+
    
 
     
