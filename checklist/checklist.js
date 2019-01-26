@@ -212,6 +212,13 @@
 
 
 
-  
+    function init() {
+
+        getElem.innerHTML = `
+        <input type="text" class="checklist__input" placeholder="Введите текст">
+        <ul class="checklist__ul"></ul>
+        `;
+
+
 
 }());
