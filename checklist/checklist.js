@@ -153,7 +153,22 @@
 
     };
 
-   
+    function closeFunc(argNum) {
+
+        const getAllBox = getUl.querySelectorAll('.checklist__li');
+
+        getAllBox.forEach(elem => {
+
+            if (elem.dataset.number === argNum) {
+
+                getUl.removeChild(elem);
+
+            }
+
+        });
+
+    };
+
 
 
 
