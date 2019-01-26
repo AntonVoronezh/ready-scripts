@@ -102,7 +102,22 @@
 
     };
 
-   
+    function getCountNotes() {
+
+        const getAllLi = getElem.querySelectorAll('.checklist__li');
+
+
+        if (getAllLi.length === 0) {
+
+            return 0;
+
+        } else {
+
+            return +Array.from(getAllLi)[getAllLi.length - 1].dataset.number + 1;
+
+        }
+
+    };
 
     
 
