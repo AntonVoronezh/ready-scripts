@@ -59,7 +59,15 @@
 
         });
 
+        createLi.addEventListener('dblclick', (event) => {
 
+            if (event.target.classList.contains('checklist__text')) {
+
+                textFunc(event.target.dataset.number);
+
+            }
+
+        });
 
 
 
