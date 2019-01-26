@@ -8,6 +8,17 @@
     const getUl = getElem.querySelector('.checklist__ul');
 
 
+    getInput.addEventListener('keydown', (event) => {
+
+        if (event.keyCode === 13 && getInput.value !== '') {
+
+            addNewNote(getInput.value);
+
+            getInput.value = '';
+
+        }
+
+    });
 
 
    
