@@ -137,7 +137,21 @@
 
     };
 
-   
+    function addStrike(argNum) {
+
+        const getAllBox = getUl.querySelectorAll('.checklist__text');
+
+        getAllBox.forEach(elem => {
+
+            if (elem.dataset.number === argNum) {
+
+                elem.innerHTML = `<s>${elem.innerHTML}</s>`;
+
+            }
+
+        });
+
+    };
 
    
 
