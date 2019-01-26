@@ -69,7 +69,17 @@
 
         });
 
+        createCheck.type = 'checkbox';
+        createText.innerHTML = argText;
+        createBackInp.value = argText;
+        createClose.innerHTML = 'X';
 
+        appendElem(createLi, createCheck);
+        appendElem(createLi, createText);
+        appendElem(createLi, createBackInp);
+        appendElem(createLi, createClose);
+
+        appendElem(getUl, createLi);
 
 
     };
