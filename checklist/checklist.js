@@ -220,5 +220,66 @@
         `;
 
 
+        const getStyle = document.querySelector('style');
+
+        getStyle.innerHTML = getStyle.innerHTML + `
+        .checklist {
+            border: 1px solid #000000;
+            width: 300px;
+            box-sizing:content-box;
+            padding: 5px;
+        }
+        .checklist__input {
+            border: 1px solid #000000;
+            width: 280px;
+            padding: 8px;
+
+        }
+        .checklist__li {
+            border: 1px solid #000000;
+            width: 280px;
+            padding: 8px;
+            margin: 0;
+            margin-top: -1px;
+            position: relative;
+            display: flex;
+        }
+        .checklist__ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        .checklist__close {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 2px solid red;
+            border-radius: 50%;
+            cursor: pointer;
+            top: 5px;
+            right: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .checklist__text {
+            margin-left: 5px;
+        }
+
+        .checklist__none {
+            display: none;
+        }
+
+        .checklist__back-input {
+            width: 100%;
+            margin-right: 22px;
+            background-color: #ccc;
+            border: 1px solid #000000;
+            padding: 5px;
+        }
+        `;
+
+    };
 
 }());
