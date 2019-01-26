@@ -90,7 +90,11 @@
 
     };
 
-   
+    function addClass(argElem, argClass) {
+
+        return argElem.classList.add(argClass);
+
+    };
 
     
    
