@@ -84,6 +84,12 @@
 
     };
 
+    function createElem(argElem) {
+
+        return document.createElement(argElem);
+
+    };
+
    
 
     
