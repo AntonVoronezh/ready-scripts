@@ -42,7 +42,22 @@
         createClose.dataset.number = getCountNotes();
         createBackInp.dataset.number = getCountNotes();
 
+        createLi.addEventListener('click', (event) => {
 
+            if (event.target.classList.contains('checklist__ckeckbox')) {
+
+                checklistFunc(event.target.dataset.number);
+
+            } else if (event.target.classList.contains('checklist__close')) {
+
+                closeFunc(event.target.dataset.number);
+
+
+            } else if (event.target.classList.contains('checklist__back-input')) {
+
+            }
+
+        });
 
 
 
