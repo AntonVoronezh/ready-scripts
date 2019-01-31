@@ -212,7 +212,15 @@
         select = form.querySelectorAll('select');
 
 
+        if (input.length !== 0 && argObj.input) {
 
+            input.forEach((elem, i) => {
+
+                elem.value = argObj.input[i];
+
+            });
+
+        }
 
 
 
