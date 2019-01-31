@@ -354,7 +354,46 @@
 
     };
 
-   
+    function makeElem(argElem, argType) {
+
+        const elem = document.createElement(argElem);
+
+        if (argType) {
+
+            elem.type = argType;
+
+        }
+
+        if (argElem === 'select') {
+
+            let selectCount;
+
+            if (inputSelect && inputSelect.value !== '') {
+
+                selectCount = +inputSelect.value;
+
+            } else {
+
+                selectCount = 10;
+
+            }
+
+            for (let i = 1; i < selectCount + 1; i += 1) {
+
+                const option = document.createElement('option');
+
+                option.innerHTML = i;
+
+                elem.appendChild(option);
+
+            };
+
+
+        }
+
+        formWrap.appendChild(elem);
+
+    };
 
 
     
