@@ -82,6 +82,25 @@
 
     };
 
+    function addElementsInObj() {
+
+        const obj = {};
+
+        addElemInObj(input, 'input', 'value', obj);
+
+        addElemInObj(textarea, 'textarea', 'value', obj);
+
+        addElemInObj(checkbox, 'checkbox', 'checked', obj);
+
+        addElemInObj(radio, 'radio', 'checked', obj);
+
+        addElemInObj(select, 'select', 'selected', obj);
+
+        console.log(obj);
+
+        return obj;
+
+    };
 
 
 
