@@ -332,6 +332,21 @@
 
     };
 
+    function checkCount(argName) {
+
+        if (getFromLocalStorage(argName)) {
+
+            const numPlusOne = plusOne(getFromLocalStorage(argName));
+
+            saveInLocalStorage(argName, numPlusOne);
+
+        } else {
+
+            saveInLocalStorage(argName, 1);
+
+        }
+
+    };
 
 
    
