@@ -314,7 +314,23 @@
 
     });
 
+    function addElementsOnWindow(argName, argElem, argType) {
 
+        let count;
+
+        if (getFromLocalStorage(argName)) {
+
+            count = getFromLocalStorage(argName);
+
+        }
+
+        for (let i = 0; i < +count; i += 1) {
+
+            makeElem(argElem, argType);
+
+        }
+
+    };
 
 
 
