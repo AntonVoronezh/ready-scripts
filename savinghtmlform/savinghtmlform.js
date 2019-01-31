@@ -290,6 +290,13 @@
 
     });
 
+    radioBtn.addEventListener('click', function () {
+
+        makeElem('input', 'radio');
+
+        checkCount('radio-count');
+
+    });
 
 
 
