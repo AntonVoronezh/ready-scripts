@@ -242,6 +242,15 @@
 
         }
 
+        if (radio.length !== 0) {
+
+            radio.forEach((elem, i) => {
+
+                elem.checked = argObj.radio[i];
+
+            });
+
+        }
 
 
 
