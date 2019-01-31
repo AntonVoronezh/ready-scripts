@@ -252,7 +252,17 @@
 
         }
 
+        if (select.length !== 0) {
 
+            select.forEach((elem, i) => {
+
+                const selectedIndex = argObj.select[i].indexOf(true);
+
+                elem.selectedIndex = selectedIndex;
+
+            });
+
+        }
 
     };
 
