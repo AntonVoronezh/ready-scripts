@@ -415,5 +415,52 @@
 
     };
 
+    function setStyle() {
+
+        const style = document.querySelector('style');
+
+        style.innerHTML = style.innerHTML + `
+            .saving-html-form  {
+                border: 1px solid #ccc;
+            }
+            .saving-html-form__wrap  {
+                width: 250px;
+                max-width: 450px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .saving-html-form__form  {
+                width: 250px;
+                max-width: 450px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .saving-html-form__input-select {
+                width: 30px;
+            }
+            .saving-html-form__padding {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            input[type=checkbox] {
+                // align-self: flex-end;
+            }
+            input[type=text] {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            textarea {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            `;
+
+    };
 
 }());
