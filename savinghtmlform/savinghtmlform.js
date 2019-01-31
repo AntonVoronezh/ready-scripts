@@ -102,6 +102,106 @@
 
     };
 
+    function addElemInObj(argElems, argName, argPass, argObj) {
+
+        const argArr = [];
+
+        let outZero, out;
+
+        if (argName === 'input') {
+
+            argElems = form.querySelectorAll('input[type=text]');
+
+        }
+
+        if (argName === 'textarea') {
+
+            argElems = form.querySelectorAll('textarea');
+
+        }
+
+        if (argName === 'checkbox') {
+
+            argElems = form.querySelectorAll('input[type=checkbox]');
+
+        }
+
+        if (argName === 'radio') {
+
+            argElems = form.querySelectorAll('input[type=radio]');
+
+        }
+
+        if (argName === 'select') {
+
+            argElems = form.querySelectorAll('select');
+
+        }
+
+        if (argElems.length === 1) {
+
+            if (argPass === 'value') {
+                outZero = argElems[0].value;
+            }
+            if (argPass === 'checked') {
+                outZero = argElems[0].checked;
+            }
+            if (argPass === 'selected') {
+                // outZero = argElems[0].selected;
+                const arr = [];
+
+                for (let item of argElems[0]) {
+
+                    arr.push(item.selected);
+
+                }
+
+                argArr.push(arr);
+            }
+
+            if (argPass !== 'selected') {
+
+                argArr.push(outZero);
+
+            }
+
+        } else {
+
+            for (let elem of argElems) {
+
+                if (argPass === 'value') {
+                    out = elem.value;
+                }
+                if (argPass === 'checked') {
+                    out = elem.checked;
+                }
+                if (argPass === 'selected') {
+
+                    const arr = [];
+
+                    for (let item of elem) {
+
+                        arr.push(item.selected);
+
+                    }
+
+                    argArr.push(arr);
+
+                }
+
+                if (argPass !== 'selected') {
+
+                    argArr.push(out);
+
+                }
+
+            }
+
+        }
+
+        argObj[argName] = argArr;
+
+    };
 
 
 
