@@ -203,6 +203,23 @@
 
     };
 
+    function getElementsFromObj(argObj) {
+
+        input = form.querySelectorAll('input[type=text]');
+        textarea = form.querySelectorAll('textarea');
+        checkbox = form.querySelectorAll('input[type=checkbox]');
+        radio = form.querySelectorAll('input[type=radio]');
+        select = form.querySelectorAll('select');
+
+
+
+
+
+
+
+
+
+    };
 
 
 
