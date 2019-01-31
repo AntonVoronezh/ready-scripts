@@ -70,6 +70,11 @@
 
     });
 
+    function getFromLocalStorage(argName) {
+
+        return localStorage.getItem(argName)
+
+    };
 
 
 
