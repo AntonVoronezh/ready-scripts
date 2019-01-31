@@ -266,6 +266,13 @@
 
     };
 
+    inputBtn.addEventListener('click', function () {
+
+        makeElem('input', 'text');
+
+        checkCount('input-count');
+
+    });
 
 
 
