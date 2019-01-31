@@ -49,6 +49,26 @@
 
     });
 
+    window.addEventListener('load', function () {
+
+        addElementsOnWindow('input-count', 'input', 'text');
+
+        addElementsOnWindow('textarea-count', 'textarea');
+
+        addElementsOnWindow('checkbox-count', 'input', 'checkbox');
+
+        addElementsOnWindow('radio-count', 'input', 'radio');
+
+        addElementsOnWindow('select-count', 'select');
+
+
+        const json = getFromLocalStorage('obj');
+
+        const obj = JSON.parse(json);
+
+        getElementsFromObj(obj);
+
+    });
 
 
 
