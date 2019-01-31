@@ -348,6 +348,11 @@
 
     };
 
+    function plusOne(argNum) {
+
+        return +argNum + 1;
+
+    };
 
    
 
