@@ -76,6 +76,12 @@
 
     };
 
+    function saveInLocalStorage(argName, argValue) {
+
+        localStorage.setItem(argName, argValue)
+
+    };
+
 
 
 
