@@ -282,6 +282,13 @@
 
     });
 
+    checkboxBtn.addEventListener('click', function () {
+
+        makeElem('input', 'checkbox');
+
+        checkCount('checkbox-count');
+
+    });
 
 
 
