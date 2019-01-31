@@ -274,6 +274,13 @@
 
     });
 
+    textareaBtn.addEventListener('click', function () {
+
+        makeElem('textarea');
+
+        checkCount('textarea-count');
+
+    });
 
 
 
