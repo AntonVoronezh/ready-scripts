@@ -222,6 +222,15 @@
 
         }
 
+        if (textarea.length !== 0) {
+
+            textarea.forEach((elem, i) => {
+
+                elem.value = argObj.textarea[i];
+
+            });
+
+        }
 
 
 
