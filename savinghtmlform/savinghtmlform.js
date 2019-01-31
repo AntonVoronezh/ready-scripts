@@ -39,7 +39,15 @@
     const resetBtn = document.querySelector('.saving-html-form__delete');
 
 
+    window.addEventListener('unload', function () {
 
+        const obj = addElementsInObj();
+
+        const json = JSON.stringify(obj);
+
+        saveInLocalStorage('obj', json);
+
+    });
 
 
 
