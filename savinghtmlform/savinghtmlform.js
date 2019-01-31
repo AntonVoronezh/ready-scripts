@@ -298,6 +298,13 @@
 
     });
 
+    selectBtn.addEventListener('click', function () {
+
+        makeElem('select');
+
+        checkCount('select-count');
+
+    });
 
 
 
