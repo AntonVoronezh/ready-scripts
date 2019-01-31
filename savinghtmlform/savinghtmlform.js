@@ -232,6 +232,15 @@
 
         }
 
+        if (checkbox.length !== 0) {
+
+            checkbox.forEach((elem, i) => {
+
+                elem.checked = argObj.checkbox[i];
+
+            });
+
+        }
 
 
 
