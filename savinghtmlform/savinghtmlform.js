@@ -396,7 +396,24 @@
     };
 
 
-    
+    function makeMarking() {
+
+        savingHtmlForm.innerHTML = `
+        <form class="saving-html-form__form"></form>
+        <div class="saving-html-form__wrap">
+            <button class="saving-html-form__input  saving-html-form__padding">+ input (text)</button>
+            <button class="saving-html-form__checkbox  saving-html-form__padding">+ input (checkbox)</button>
+            <button class="saving-html-form__radio  saving-html-form__padding">+ input (radio)</button>
+            <button class="saving-html-form__textarea  saving-html-form__padding">+ textarea</button>
+            <div class="saving-html-form__group  saving-html-form__padding">
+                <input type="text" class="saving-html-form__input-select">
+                <button class="saving-html-form__select">+ select</button>
+            </div>
+            <button class="saving-html-form__delete">очистить форму и хранилище</button>
+        </div>
+            `;
+
+    };
 
 
 }());
