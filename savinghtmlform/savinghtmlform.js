@@ -306,7 +306,13 @@
 
     });
 
+    resetBtn.addEventListener('click', function () {
 
+        formWrap.innerHTML = '';
+
+        localStorage.clear();
+
+    });
 
 
 
