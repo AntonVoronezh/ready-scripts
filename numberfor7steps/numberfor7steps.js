@@ -47,7 +47,15 @@
 
         addCount();
 
+        if (flag) {
 
+            const newNum = Math.floor(num + (endNum - num) / 2);
+
+            startNum = num;
+
+
+
+        }
 
 
 
