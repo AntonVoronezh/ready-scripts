@@ -87,6 +87,13 @@
 
     };
 
+    function moreAlgorithm() {
+
+        flag = true;
+
+        startAlgorithm();
+
+    };
 
 
 
