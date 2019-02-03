@@ -127,7 +127,17 @@
 
     };
 
+    function createElem(argElem, argClass, argTxt, argParent) {
 
+        const elem = document.createElement(argElem);
+
+        elem.classList.add(argClass);
+
+        elem.innerHTML = argTxt;
+
+        argParent.appendChild(elem);
+
+    };
 
 
 
