@@ -95,6 +95,13 @@
 
     };
 
+    function lessAlgorithm() {
+
+        flag = false;
+
+        startAlgorithm();
+
+    };
 
 
 
