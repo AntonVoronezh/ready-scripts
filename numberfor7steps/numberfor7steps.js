@@ -180,7 +180,37 @@
 
         const style = document.querySelector('style');
 
-   
+        style.innerHTML = style.innerHTML + `
+            #num7st {
+                border: 1px solid #ccc;
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .num7st__none {
+                display: none;
+            }
+
+            .num7st__number {
+                font-size: 25px;
+            }
+
+            .num7st__red {
+                color: red;
+                font-size: 25px;
+            }
+            .num7st__count {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .num7st__number {
+                margin-bottom: 10px;
+            }
+            `;
 
     };
 
