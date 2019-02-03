@@ -30,7 +30,17 @@
     let countNum = 1;
 
 
+    start.addEventListener('click', function () {
 
+        addCount();
+
+        addNumber(num);
+
+        hideStartBtn();
+
+        addBtns();
+
+    });
 
 
 
