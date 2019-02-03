@@ -119,6 +119,13 @@
 
     };
 
+    function addListeners() {
+
+        more.addEventListener('click', moreAlgorithm);
+
+        less.addEventListener('click', lessAlgorithm);
+
+    };
 
 
 
