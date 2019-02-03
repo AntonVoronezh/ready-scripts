@@ -109,7 +109,15 @@
 
     };
 
+    function addBtns() {
 
+        less.classList.remove('num7st__none');
+
+        more.classList.remove('num7st__none');
+
+        addListeners();
+
+    };
 
 
 
