@@ -139,6 +139,15 @@
 
     };
 
+    function addCount() {
+
+        count.innerHTML = `Попытка #${countNum}`;
+
+        number.style.fontSize = '50px';
+
+ 
+
+    };
 
 
 
