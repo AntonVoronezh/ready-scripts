@@ -103,6 +103,11 @@
 
     };
 
+    function addNumber(argNum = 50) {
+
+        number.innerHTML = argNum;
+
+    };
 
 
 
