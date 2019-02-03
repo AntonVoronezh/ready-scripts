@@ -145,7 +145,11 @@
 
         number.style.fontSize = '50px';
 
- 
+        if (countNum <= 6) {
+
+            countNum += 1;
+
+        }
 
     };
 
