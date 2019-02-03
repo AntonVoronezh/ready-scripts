@@ -159,7 +159,22 @@
 
     };
 
+    function makeMarking() {
 
+        num7st.innerHTML = `
+        <div class="num7st__title">Загадайте число от <b>1</b> до <b>100</b> 
+            и я угодаю его за <span class="num7st__red"><b>7</b></span>
+            попыток.</div>
+        <div class="num7st__count"></div>
+        <div class="num7st__number"></div>
+        <div class="num7st__wrap">
+            <button class="num7st__start">начать</button>
+            <button class="num7st__less  num7st__none">меньше</button>
+            <button class="num7st__more  num7st__none">больше</button>
+        </div>
+            `;
+
+    };
 
 
 
