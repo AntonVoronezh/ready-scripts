@@ -153,7 +153,11 @@
 
     };
 
+    function hideStartBtn() {
 
+        start.classList.add('num7st__none');
+
+    };
 
 
 
