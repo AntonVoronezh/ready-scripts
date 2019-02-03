@@ -65,7 +65,17 @@
 
         }
 
+        if (!flag) {
 
+            const newNum = Math.floor(num - (num - startNum) / 2);
+
+            endNum = num;
+
+
+
+        }
+
+        addNumber(num);
 
     };
 
