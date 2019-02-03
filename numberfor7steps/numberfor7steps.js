@@ -43,6 +43,15 @@
     });
 
 
+    function startAlgorithm() {
+
+        addCount();
+
+
+
+
+
+    };
 
 
 
