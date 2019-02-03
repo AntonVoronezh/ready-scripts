@@ -71,7 +71,15 @@
 
             endNum = num;
 
+            if (num === 1) {
 
+                num = 1;
+
+            } else {
+
+                num = newNum;
+
+            }
 
         }
 
