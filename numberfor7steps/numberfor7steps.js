@@ -19,7 +19,15 @@
     const more = num7st.querySelector('.num7st__more');
     
 
-;
+    let flag;
+
+    let startNum = 0;
+
+    let endNum = 100;
+
+    let num = 50;
+
+    let countNum = 1;
 
 
 
