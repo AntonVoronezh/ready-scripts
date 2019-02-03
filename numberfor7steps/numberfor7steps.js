@@ -176,6 +176,13 @@
 
     };
 
+    function setStyle() {
+
+        const style = document.querySelector('style');
+
+   
+
+    };
 
 
 }());
