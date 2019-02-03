@@ -53,7 +53,15 @@
 
             startNum = num;
 
+            if (num === 99 && newNum === 99) {
 
+                num = 100;
+
+            } else {
+
+                num = newNum;
+
+            }
 
         }
 
