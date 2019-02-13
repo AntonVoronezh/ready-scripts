@@ -143,7 +143,13 @@
 
     };
 
+    function cleanField() {
 
+        const elem = moveword.querySelector('.moveword__field');
+
+        elem.innerHTML = '';
+
+    };
 
 
 
