@@ -163,6 +163,21 @@
 
     };
 
+    function addFields(argCount) {
+
+        createElem('div', 'moveword__parent', '', '.moveword__field');
+
+        createElem('div', 'moveword__panel', '', '.moveword__field');
+
+        const parent = moveword.querySelector('.moveword__parent');
+
+        const panel = moveword.querySelector('.moveword__panel');
+
+        parent.style.height = `${(argCount * 50) + 10}px`;
+
+        panel.style.height = `${(argCount * 50) + 10}px`;
+
+    };
 
 
 
