@@ -299,6 +299,17 @@
 
     };
 
+    function shuffleLetters(argArr) {
+
+        function compareRandom(a, b) {
+
+            return Math.random() - 0.5;
+
+        }
+
+        return argArr.sort(compareRandom);
+
+    };
 
 
 
