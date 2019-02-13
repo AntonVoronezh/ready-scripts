@@ -289,7 +289,15 @@
 
     };
 
+    function addShuffledLetters(argArr) {
 
+        argArr.forEach(elem => {
+
+            createElem('div', 'moveword__elems', elem, '.moveword__panel', true);
+
+        });
+
+    };
 
 
 
