@@ -151,7 +151,17 @@
 
     };
 
+    function addButtons() {
 
+        createElem('button', 'moveword__again dn', 'Еще раз', '.moveword');
+
+        createElem('button', 'moveword__more dn', 'Дальше', '.moveword');
+
+        const more = moveword.querySelector('.moveword__more');
+
+        more.disabled = true;
+
+    };
 
 
 
