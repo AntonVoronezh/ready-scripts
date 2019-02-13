@@ -367,7 +367,17 @@
 
         const allOptions = select.querySelectorAll('option');
 
+        allOptions.forEach(elem => {
 
+            elem.selected = false;
+
+            if (Number(elem.value) === argNum) {
+
+                elem.selected = true;
+
+            }
+
+        });
 
     };
 
