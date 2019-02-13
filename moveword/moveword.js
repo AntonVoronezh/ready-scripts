@@ -137,7 +137,11 @@
 
     };
 
+    function cleanSetings() {
 
+        setings.wordSet = '';
+
+    };
 
 
 
