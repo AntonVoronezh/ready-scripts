@@ -205,7 +205,15 @@
 
         });
 
+        parent.addEventListener('drop', (event) => {
 
+            parent.appendChild(elems[event.dataTransfer.getData('data-index')]);
+
+            addLetterInWordSet(event.dataTransfer.getData('data-letter'));
+
+
+
+        });
 
     };
 
