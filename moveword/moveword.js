@@ -187,7 +187,18 @@
 
         const field = moveword.querySelector('.moveword__field');
 
- 
+        elems.forEach((elem, i) => {
+
+            elem.addEventListener('dragstart', (event) => {
+
+                event.dataTransfer.setData('data-index', i);
+
+                event.dataTransfer.setData('data-letter', elem.innerHTML);
+
+            });
+
+        });
+
  
 
 
