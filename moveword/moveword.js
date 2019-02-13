@@ -52,6 +52,39 @@
 
     });
 
+    function startPlay(argNumSelectedOption) {
+
+        setings.selectedOption = argNumSelectedOption;
+
+        addFields(argNumSelectedOption);
+
+        addButtons();
+
+        const word = getWord(argNumSelectedOption);
+
+        // console.log(word);
+
+        setings.prototypeWord = word;
+
+        const arrLetters = getArrFromStr(word);
+
+        const arrShuffledLetters = shuffleLetters(arrLetters);
+
+        addShuffledLetters(arrShuffledLetters);
+
+        addHideVisible();
+
+        addElementsListeners();
+
+        if (setings.flag === false) {
+
+            addButtonsListeners();
+
+            setings.flag = true;
+
+        }
+
+    };
 
 
 
