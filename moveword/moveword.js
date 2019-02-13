@@ -311,6 +311,11 @@
 
     };
 
+    function getArrFromStr(argStr) {
+
+        return argStr.split('');
+
+    };
 
 
 
