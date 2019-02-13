@@ -44,6 +44,14 @@
 
     const start = moveword.querySelector('.moveword__start');
 
+    start.addEventListener('click', () => {
+
+        const lettersCount = findSelectedOption();
+
+        startPlay(lettersCount);
+
+    });
+
 
 
 
