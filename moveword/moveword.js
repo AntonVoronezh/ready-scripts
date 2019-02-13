@@ -277,7 +277,17 @@
 
     };
 
+    function addHideVisible() {
 
+        const again = moveword.querySelector('.moveword__again');
+
+        const more = moveword.querySelector('.moveword__more');
+
+        start.classList.add('dn');
+        more.classList.add('db');
+        again.classList.add('db');
+
+    };
 
 
 
