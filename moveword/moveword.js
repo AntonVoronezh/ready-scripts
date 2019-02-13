@@ -233,6 +233,25 @@
 
     };
 
+    function addBorder(arg) {
+
+        const elem = moveword.querySelector('.moveword__parent');
+
+        const elems = moveword.querySelectorAll('.moveword__elems');
+
+        if (arg) {
+
+            elem.classList.add('green');
+
+        } else {
+
+            elem.classList.add('red');
+
+        }
+
+
+
+    };
 
 
 
