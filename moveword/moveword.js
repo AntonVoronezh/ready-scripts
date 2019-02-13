@@ -361,7 +361,15 @@
 
     };
 
+    function changeOption(argNum) {
 
+        const select = moveword.querySelector('.moveword__select');
+
+        const allOptions = select.querySelectorAll('option');
+
+
+
+    };
 
 
 
