@@ -86,7 +86,27 @@
 
     };
 
+    function addButtonsListeners() {
 
+        const again = moveword.querySelector('.moveword__again');
+
+        again.addEventListener('click', () => {
+
+            addHideVisible();
+
+            cleanField();
+
+            cleanSetings();
+
+            startPlay(setings.selectedOption);
+
+        });
+
+        const more = moveword.querySelector('.moveword__more');
+
+
+
+    };
 
 
 
