@@ -381,6 +381,25 @@
 
     };
 
+    function makeMarking() {
+
+        moveword.innerHTML = `
+        <div class="moveword__wrap">
+        <div class="moveword__count">Количество букв</div>
+        <select class="moveword__select">
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select>
+        </div>
+        <div class="moveword__field">
+        </div>
+        <button class="moveword__start">Начать</button>
+            `;
+
+    };
 
 
 
