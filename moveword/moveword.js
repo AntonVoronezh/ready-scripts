@@ -265,7 +265,11 @@
 
     };
 
+    function getCountLetters() {
 
+        return moveword.querySelector('.moveword__parent').childNodes.length;
+
+    };
 
 
 
