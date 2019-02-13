@@ -271,7 +271,11 @@
 
     };
 
+    function addLetterInWordSet(argStr) {
 
+        setings.wordSet += argStr;
+
+    };
 
 
 
