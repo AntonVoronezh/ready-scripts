@@ -323,6 +323,19 @@
 
     };
 
+    function createElem(argElem, argClass, argInner, argParent, argDrag) {
+
+        const elem = document.createElement(argElem);
+
+        const classArr = argClass.split(' ');
+
+
+
+        const parent = document.querySelector(argParent);
+
+        parent.appendChild(elem);
+
+    };
 
 
 
