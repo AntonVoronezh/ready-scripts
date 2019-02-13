@@ -179,6 +179,19 @@
 
     };
 
+    function addElementsListeners() {
+
+        const parent = moveword.querySelector('.moveword__parent');
+
+        const elems = moveword.querySelectorAll('.moveword__elems');
+
+        const field = moveword.querySelector('.moveword__field');
+
+ 
+ 
+
+
+    };
 
 
 
