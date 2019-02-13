@@ -199,7 +199,12 @@
 
         });
 
- 
+        parent.addEventListener('dragover', (event) => {
+
+            event.preventDefault();
+
+        });
+
 
 
     };
