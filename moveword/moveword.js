@@ -249,7 +249,19 @@
 
         }
 
+        elems.forEach(item => {
 
+            if (arg) {
+
+                item.classList.add('none');
+
+            } else {
+
+                item.classList.add('none');
+
+            }
+
+        });
 
     };
 
