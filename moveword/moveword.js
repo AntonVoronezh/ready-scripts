@@ -349,7 +349,17 @@
 
     };
 
+    function findSelectedOption() {
 
+        const select = moveword.querySelector('.moveword__select');
+
+        const allOptions = select.querySelectorAll('option');
+
+        const elem = [...allOptions].find(elem => elem.selected === true);
+
+        return Number(elem.value);
+
+    };
 
 
 
