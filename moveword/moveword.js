@@ -104,7 +104,36 @@
 
         const more = moveword.querySelector('.moveword__more');
 
+        more.addEventListener('click', () => {
 
+            addHideVisible();
+
+            cleanField();
+
+            cleanSetings();
+
+            const arrLength = words[setings.selectedOption].length;
+
+            setings.numInArrWords = setings.numInArrWords + 1;
+
+            if (arrLength === setings.numInArrWords) {
+
+                setings.selectedOption = setings.selectedOption + 1;
+
+                setings.numInArrWords = 0;
+
+                changeOption(setings.selectedOption);
+
+                startPlay(setings.selectedOption);
+
+
+            } else {
+
+                startPlay(setings.selectedOption);
+
+            }
+
+        });
 
     };
 
