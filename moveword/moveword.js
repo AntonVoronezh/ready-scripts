@@ -317,6 +317,11 @@
 
     };
 
+    function getWord(argNum) {
+
+        return words[argNum][setings.numInArrWords];
+
+    };
 
 
 
