@@ -329,7 +329,19 @@
 
         const classArr = argClass.split(' ');
 
+        classArr.forEach(item => {
 
+            elem.classList.add(item);
+
+        });
+
+        elem.innerHTML = argInner;
+
+        if (argDrag) {
+
+            elem.draggable = "true"
+
+        }
 
         const parent = document.querySelector(argParent);
 
