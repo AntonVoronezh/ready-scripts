@@ -211,7 +211,23 @@
 
             addLetterInWordSet(event.dataTransfer.getData('data-letter'));
 
+            if (getCountLetters() === setings.selectedOption) {
 
+                if (setings.prototypeWord === setings.wordSet) {
+
+                    addBorder(true);
+
+                    const more = moveword.querySelector('.moveword__more');
+
+                    more.disabled = false;
+
+                } else {
+
+                    addBorder(false);
+
+                }
+
+            }
 
         });
 
