@@ -16,6 +16,14 @@
 
     class Cell {
 
+        constructor(argTr, argTd) {
+
+            this._tr = argTr;
+
+            this._td = argTd;
+
+        }
+
 
 
 
