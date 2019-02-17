@@ -126,7 +126,19 @@
 
             }
 
+            if (this._isExists(this._tr, this._td - 1) !== undefined) {
 
+                if (this._td - 1 !== 0) {
+
+                    _leftMiddle = [this._tr, this._td - 1];
+
+                    _result.leftMiddle = _leftMiddle;
+
+                }
+
+            }
+
+            return _result;
 
         }
 
