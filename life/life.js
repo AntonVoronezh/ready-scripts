@@ -86,7 +86,17 @@
 
             }
 
+            if (this._isExists(this._tr - 1, this._td + 1) !== undefined) {
 
+                if (this._tr - 1 !== 0) {
+
+                    _rightTop = [this._tr - 1, this._td + 1];
+
+                    _result.rightTop = _rightTop;
+
+                }
+
+            }
 
 
 
