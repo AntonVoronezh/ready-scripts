@@ -58,7 +58,21 @@
                 }
             }
 
+            if (this._isExists(this._tr - 1, this._td - 1) !== undefined) {
 
+                if (this._tr - 1 !== 0) {
+
+                    if (this._td - 1 !== 0) {
+
+                        _leftTop = [this._tr - 1, this._td - 1];
+
+                        _result.leftTop = _leftTop;
+
+                    }
+
+                }
+
+            }
 
 
 
