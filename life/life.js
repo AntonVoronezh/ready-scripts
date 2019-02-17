@@ -118,7 +118,13 @@
 
             }
 
+            if (this._isExists(this._tr, this._td + 1) !== undefined) {
 
+                _rightMiddle = [this._tr, this._td + 1];
+
+                _result.rightMiddle = _rightMiddle;
+
+            }
 
 
 
