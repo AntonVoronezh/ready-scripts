@@ -30,6 +30,36 @@
 
         }
 
+        getNeighbors(argTrCount, argTdCount) {
+
+            const _result = {};
+
+            let _rightMiddle,
+                _leftMiddle,
+                _top,
+                _bottom,
+                _rightTop,
+                _rightBottom,
+                _leftTop,
+                _leftBottom;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
 
 
 
