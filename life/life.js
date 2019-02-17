@@ -98,7 +98,13 @@
 
             }
 
+            if (this._tr < argTrCount) {
 
+                _bottom = [this._tr + 1, this._td];
+
+                _result.bottom = _bottom;
+
+            }
 
 
 
