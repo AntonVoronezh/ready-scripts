@@ -74,7 +74,17 @@
 
             }
 
+            if (this._tr < argTrCount) {
 
+                if (this._isExists(this._tr, this._td + 1) !== undefined) {
+
+                    _rightBottom = [this._tr + 1, this._td + 1];
+
+                    _result.rightBottom = _rightBottom;
+
+                }
+
+            }
 
 
 
