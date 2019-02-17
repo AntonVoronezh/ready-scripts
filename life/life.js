@@ -24,6 +24,11 @@
 
         }
 
+        getCell() {
+
+            return `ячейка ${this._tr} - ${this._td}`;
+
+        }
 
 
 
