@@ -106,7 +106,17 @@
 
             }
 
+            if (this._isExists(this._tr - 1, this._td) !== undefined) {
 
+                if (this._tr - 1 !== 0) {
+
+                    _top = [this._tr - 1, this._td];
+
+                    _result.top = _top;
+
+                }
+
+            }
 
 
 
