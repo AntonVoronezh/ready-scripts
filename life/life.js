@@ -43,7 +43,20 @@
                 _leftTop,
                 _leftBottom;
 
+            if (this._tr < argTrCount) {
 
+                if (this._isExists(this._tr + 1, this._td - 1) !== undefined) {
+
+                    if (this._td - 1 !== 0) {
+
+                        _leftBottom = [this._tr + 1, this._td - 1];
+
+                        _result.leftBottom = _leftBottom;
+
+                    }
+
+                }
+            }
 
 
 
