@@ -6,6 +6,8 @@
 
     makeMarking();
 
+    setStyle();
+
     function makeMarking() {
 
         life.innerHTML = `
@@ -19,5 +21,102 @@
             `;
 
     };
+
+    function setStyle() {
+
+        const style = document.querySelector('style');
+
+        style.innerHTML = style.innerHTML + `
+        .life {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #999;
+            padding: 10px;
+        }
+
+        .life__input {
+            margin-bottom: 5px;
+        }
+
+        .life__wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .life__table {
+            border-spacing: 0;
+        }
+
+        .life__td {
+            border: 1px solid #999;
+            width: 4px;
+            height: 4px;
+        }
+
+        .dn {
+            display: none;
+        }
+
+        .life__run {
+            margin-top: 5px;
+        }
+
+        .black {
+            background-color: #000;
+        }
+
+        .life__populate {
+            margin-top: 10px;
+        }
+
+        .life__step {
+            margin-top: 10px;
+        }
+
+        .life__quick {
+            margin-top: 10px;
+        }
+
+        .life__stop {
+
+            margin-top: 10px;
+        }
+
+        .life__title {
+            text-align: center;
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        .span {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-size: 18px;
+            color: red;
+        }
+
+        .life__text {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .life__start {
+            margin-top: 10px;
+        }
+
+        .life__field {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            `;
+
+    };
+
 
 })();
