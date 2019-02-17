@@ -8,6 +8,15 @@
 
     setStyle();
 
+    const map = [];
+    const all = [];
+    const settings = {};
+    const mapForEnd = [];
+    let timerId;
+
+
+    
+
     function makeMarking() {
 
         life.innerHTML = `
