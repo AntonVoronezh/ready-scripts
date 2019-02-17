@@ -14,8 +14,14 @@
     const mapForEnd = [];
     let timerId;
 
+    class Cell {
 
-    
+
+
+
+
+    };
+
 
     function makeMarking() {
 
