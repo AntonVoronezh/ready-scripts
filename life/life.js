@@ -142,7 +142,11 @@
 
         }
 
+        _isExists(argTr, argTd) {
 
+            return map[argTr][argTd];
+
+        }
 
     };
 
