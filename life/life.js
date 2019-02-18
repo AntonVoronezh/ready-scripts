@@ -150,6 +150,20 @@
 
     };
 
+    start.addEventListener('click', () => {
+
+        closeStart();
+
+        createElem('div', 'life__title', 'Это жизнь!', '.life__field');
+
+        addField();
+
+        createElem('div', 'life__text', '', '.life__field');
+
+        addButtons();
+
+    });
+
 
     function makeMarking() {
 
