@@ -164,6 +164,28 @@
 
     });
 
+    function handlerStep() {
+
+        const elems = life.querySelectorAll('.life__td');
+
+        elems.forEach(elem => {
+
+            const i = Number(elem.dataset.tr);
+
+            const j = Number(elem.dataset.td);
+
+            const result = processingNeighbors(map[i][j].getNeighbors(settings.width, settings.height));
+
+            makeLife(elem, result);
+
+        });
+
+        addEnd();
+
+        addText(mapForEnd.length + 1);
+
+    };
+
 
     function makeMarking() {
 
