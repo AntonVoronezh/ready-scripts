@@ -431,6 +431,20 @@
 
     };
 
+    function makePopulate(argNum) {
+
+        for (let i = 0; i <= argNum; i += 1) {
+
+            const num = getRandomInt(0, all.length - 1);
+
+            const elem = getElemForNum(all[num]);
+
+            elem.classList.add('black');
+
+        }
+
+    };
+
 
     function makeMarking() {
 
