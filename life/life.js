@@ -481,6 +481,14 @@
 
     };
 
+    function closeStart() {
+
+        const wrap = life.querySelector('.life__wrap');
+
+        wrap.classList.add('dn');
+
+    };
+
     function makeMarking() {
 
         life.innerHTML = `
