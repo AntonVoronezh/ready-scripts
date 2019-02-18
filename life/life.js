@@ -379,6 +379,38 @@
 
     };
 
+    function checkMapForEnd() {
+
+        if (mapForEnd.length > 2) {
+
+            let last, lastLast, lastLastLast;
+
+            mapForEndCopy = mapForEnd.reverse();
+
+            last = mapForEndCopy[0];
+
+            lastLast = mapForEndCopy[1];
+
+            lastLastLast = mapForEndCopy[2];
+
+            if (last.length === lastLast.length && lastLast.length === lastLastLast.length) {
+
+                if (addDiff(last, lastLast) && addDiff(lastLast, lastLastLast)) {
+
+                    console.log('last=last2=last3');
+
+                    printEndResult(3);
+
+                    clearInterval(timerId);
+
+                }
+
+            }
+
+        }
+
+    };
+
     function makeMarking() {
 
         life.innerHTML = `
