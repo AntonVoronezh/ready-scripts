@@ -453,6 +453,27 @@
 
     };
 
+    function getElemForNum(argArr) {
+
+        const [tr, td] = argArr;
+
+        const elems = life.querySelectorAll('.life__td');
+
+        let result;
+
+        elems.forEach(elem => {
+
+            if (+elem.dataset.tr === tr && +elem.dataset.td === td) {
+
+                result = elem;
+
+            }
+
+        });
+
+        return result;
+
+    };
 
     function makeMarking() {
 
