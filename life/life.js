@@ -2,11 +2,11 @@
 
     const life = document.querySelector('#life');
 
-    const start = life.querySelector('.life__start');
-
     makeMarking();
 
     setStyle();
+
+    const start = life.querySelector('.life__start');
 
     const map = [];
     const all = [];
@@ -267,7 +267,7 @@
 
         elem.innerHTML += `<br><span class="span">${arrEnd[argNum]}</span>`;
 
-        console.log(arrEnd[argNum]);
+        // console.log(arrEnd[argNum]);
         
     };
 
