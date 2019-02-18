@@ -609,6 +609,12 @@
 
     };
 
+    function checkLive(argElem) {
+
+        return argElem.classList.contains('black');
+
+    };
+
     function makeMarking() {
 
         life.innerHTML = `
