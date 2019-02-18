@@ -186,6 +186,22 @@
 
     };
 
+    function makeLife(argElem, argCount) {
+
+        if (argCount.length === 3) {
+
+            argElem.classList.add('black');
+
+        }
+
+        if (argCount.length < 2 || argCount.length > 3) {
+
+            argElem.classList.remove('black');
+
+        }
+
+    };
+
 
     function makeMarking() {
 
