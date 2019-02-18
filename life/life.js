@@ -615,6 +615,35 @@
 
     };
 
+    
+    function createElem(argElem, argClass, argInner, argParent) {
+
+        const elem = document.createElement(argElem);
+
+        const classArr = argClass.split(' ');
+
+        classArr.forEach(item => {
+
+            elem.classList.add(item);
+
+        });
+
+        elem.innerHTML = argInner;
+
+        if (argParent) {
+
+            const parent = document.querySelector(argParent);
+
+            parent.appendChild(elem);
+
+        } else {
+
+            return elem;
+
+        }
+
+    };
+
     function makeMarking() {
 
         life.innerHTML = `
