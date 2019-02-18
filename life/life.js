@@ -489,6 +489,20 @@
 
     };
 
+    function addField() {
+
+        const widthCount = Number(life.querySelector('.life__width').value);
+
+        const heightCount = Number(life.querySelector('.life__height').value);
+
+        makeTable(widthCount, heightCount);
+
+        settings.width = widthCount;
+
+        settings.height = heightCount;
+
+    };
+
     function makeMarking() {
 
         life.innerHTML = `
