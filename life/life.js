@@ -202,6 +202,45 @@
 
     };
 
+    function addButtons() {
+
+        createElem('button', 'life__populate', 'Заселить', '.life');
+
+        const populate = life.querySelector('.life__populate');
+
+        populate.addEventListener('click', handlerPopulate);
+
+        createElem('button', 'life__step', 'Одно поколение', '.life');
+
+        const step = life.querySelector('.life__step');
+
+        step.addEventListener('click', handlerStep);
+
+        createElem('button', 'life__quick', 'Просто смотреть', '.life');
+
+        const quick = life.querySelector('.life__quick');
+
+        quick.addEventListener('click', () => {
+
+            timerId = setInterval(function () {
+
+                handlerStep();
+
+            }, 1500);
+
+        });
+
+        createElem('button', 'life__stop', 'Остановить', '.life');
+
+        const stop = life.querySelector('.life__stop');
+
+        stop.addEventListener('click', () => {
+
+            clearInterval(timerId);
+
+        });
+
+    };
 
     function makeMarking() {
 
