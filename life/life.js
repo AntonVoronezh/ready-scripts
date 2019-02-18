@@ -565,6 +565,28 @@
 
     };
 
+    function processingNeighbors(argObj) {
+
+        const result = [];
+
+        for (key in argObj) {
+
+            let cell = argObj[key];
+
+            let elem = getCellForCheck(cell);
+
+            if (checkLive(elem)) {
+
+                result.push(1)
+
+            }
+
+        }
+
+        return result;
+
+    };
+
     function makeMarking() {
 
         life.innerHTML = `
