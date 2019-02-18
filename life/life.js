@@ -411,6 +411,27 @@
 
     };
 
+    function handlerPopulate() {
+
+        if (settings.width === 0) {
+            settings.width = 20;
+        }
+
+        if (settings.height === 0) {
+            settings.height = 20;
+        }
+
+        const countCells = settings.width * settings.height;
+
+        const countCellsCeil = Math.ceil(countCells / 5);
+
+        makePopulate(countCellsCeil);
+
+        addText(1);
+
+    };
+
+
     function makeMarking() {
 
         life.innerHTML = `
