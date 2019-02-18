@@ -503,6 +503,68 @@
 
     };
 
+    function makeTable(argWidth, argHeight) {
+
+        argWidth = argWidth || 20;
+
+        argHeight = argHeight || 20;
+
+        const field = life.querySelector('.life__field');
+
+        const table = createElem('table', 'life__table', '');
+
+        for (let i = 0; i <= argHeight; i += 1) {
+
+            if (i === 0) {
+                map.push('mapInner');
+            } else {
+
+                const tr = createElem('tr', 'life__tr', '');
+
+                let mapInner = [];
+
+                for (let j = 0; j <= argWidth; j += 1) {
+
+                    if (j === 0) {
+                        mapInner.push('');
+                    } else {
+
+                        mapInner.push(new Cell(i, j));
+
+                        let td = createElem('td', 'life__td', '');
+
+                        td.dataset.tr = i;
+
+                        td.dataset.td = j;
+
+                        td.addEventListener('click', function () {
+
+                            this.classList.add('black');
+
+                            processingNeighbors(map[i][j].getNeighbors(argHeight, argWidth));
+
+                        });
+
+                        tr.appendChild(td);
+
+                        all.push([i, j]);
+
+                    }
+
+                }
+
+                map.push(mapInner);
+
+                table.appendChild(tr);
+
+            }
+
+        }
+
+        field.appendChild(table);
+
+    };
+
     function makeMarking() {
 
         life.innerHTML = `
