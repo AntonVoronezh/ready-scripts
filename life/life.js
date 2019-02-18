@@ -587,6 +587,28 @@
 
     };
 
+    function getCellForCheck(argCoordinates) {
+
+        const all = life.querySelectorAll('.life__td');
+
+        const [tr, td] = argCoordinates;
+
+        let result;
+
+        all.forEach(elem => {
+
+            if (+elem.dataset.tr === tr && +elem.dataset.td === td) {
+
+                result = elem;
+
+            }
+
+        });
+
+        return result;
+
+    };
+
     function makeMarking() {
 
         life.innerHTML = `
