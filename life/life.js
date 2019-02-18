@@ -269,6 +269,35 @@
 
         console.log(arrEnd[argNum]);
         
+    };
+
+    function checkRepeat() {
+
+        const lastNum = mapForEnd.length - 1;
+
+        const lastArr = mapForEnd[lastNum];
+
+        mapForEnd.forEach((elem, i) => {
+
+            if (i !== lastNum) {
+
+                if (elem.length === lastArr.length) {
+
+                    if (addDiff(elem, lastArr)) {
+
+                        printEndResult(1);
+
+                        clearInterval(timerId);
+
+                        console.log('repeat');
+
+                    }
+
+                }
+
+            }
+
+        });
 
     };
 
