@@ -242,6 +242,18 @@
 
     };
 
+    function addEnd() {
+
+        checkRepeat();
+
+        checkZeroForEnd();
+
+        checkMapForEnd();
+
+        makeMapForEnd();
+
+    };
+
     function makeMarking() {
 
         life.innerHTML = `
