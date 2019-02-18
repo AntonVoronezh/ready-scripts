@@ -254,6 +254,25 @@
 
     };
 
+    function printEndResult(argNum) {
+
+        const arrEnd = [
+            '',
+            'Конец Игры <br>(Повтор состояния жизни).',
+            'Конец Игры <br>(Нет живых клеток).',
+            'Конец Игры <br>(Последние 3 состояния без изменений).'
+        ];
+
+        const elem = life.querySelector('.life__title');
+
+        elem.innerHTML += `<br><span class="span">${arrEnd[argNum]}</span>`;
+
+        console.log(arrEnd[argNum]);
+        
+
+    };
+
+
     function makeMarking() {
 
         life.innerHTML = `
