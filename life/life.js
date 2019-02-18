@@ -301,6 +301,38 @@
 
     };
 
+    function checkZeroForEnd() {
+
+        const elems = life.querySelectorAll('.life__td');
+
+        const result = [];
+
+        elems.forEach(elem => {
+
+            if (elem.classList.contains('black')) {
+
+                const i = Number(elem.dataset.tr);
+
+                const j = Number(elem.dataset.td);
+
+                result.push([i, j]);
+
+            }
+
+        });
+
+        if (result.length === 0) {
+
+            console.log('zero');
+
+            printEndResult(2);
+
+            clearInterval(timerId);
+
+        }
+
+    };
+
 
     function makeMarking() {
 
