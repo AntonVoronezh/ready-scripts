@@ -356,6 +356,29 @@
 
     };
 
+    function addDiff(argArr1, argArr2) {
+
+        let flag = true;
+
+        argArr1.forEach((elem, i) => {
+
+            elem.forEach((item, j) => {
+
+                if (item !== argArr2[i][j]) {
+
+                    flag = false;
+
+                }
+
+            });
+
+
+        });
+
+        return flag;
+
+    };
+
     function makeMarking() {
 
         life.innerHTML = `
