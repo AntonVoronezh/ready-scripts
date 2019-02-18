@@ -445,6 +445,14 @@
 
     };
 
+    function addText(argNum) {
+
+        const elem = life.querySelector('.life__text');
+
+        elem.innerHTML = `Это ${argNum} поколение`;
+
+    };
+
 
     function makeMarking() {
 
