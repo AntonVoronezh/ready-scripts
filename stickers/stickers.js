@@ -339,6 +339,133 @@
 
     }
 
+    class Sticker {
 
+        constructor(argMap, argZ, argPageX, argPageY, argHistory) {
+
+            this._map = argMap;
+
+            this._zIndex = argZ;
+
+            this._pageX = argPageX;
+
+            this._pageY = argPageY;
+
+            this._num = this._map.size();
+
+            this._create();
+
+            if (argHistory) {
+
+                this._history = argHistory;
+
+                this._install();
+
+            }
+
+            this._elem;
+
+        }
+
+        _install() {
+
+            this._elem.value = this._history.text;
+            this._elem.style.width = this._history.width;
+            this._elem.style.height = this._history.height;
+            this._elem.style.top = this._history.top;
+            this._elem.style.left = this._history.left;
+            if (this._history.zForSave !== null) {
+                this._elem.style.zIndex = this._history.zForSave;
+            }
+
+        }
+
+        _add(argElem) {
+
+            this._map.add([this, argElem]);
+
+            this._zIndex.add();
+
+        }
+
+        _create() {
+
+            const elem = document.createElement('textarea');
+
+            elem.classList.add(settings.sticker);
+
+            elem.style.left = `${this._pageX}px`;
+
+            elem.style.top = `${this._pageY}px`;
+
+            elem.draggable = "true";
+
+            this._changePosition(elem);
+
+            this._rightClick(elem);
+
+            this._focus(elem);
+
+            settings.notes.appendChild(elem);
+
+            elem.focus();
+
+            this._add(elem);
+
+            this._elem = elem;
+
+        }
+
+        _changePosition(argElem) {
+
+            let offsetX, offsetY;
+
+            argElem.addEventListener('dragstart', () => {
+
+                offsetX = event.offsetX;
+
+                offsetY = event.offsetY;
+
+            });
+
+            argElem.addEventListener('dragend', () => {
+
+                argElem.style.top = `${event.pageY - offsetY}px`;
+
+                argElem.style.left = `${event.pageX - offsetX}px`;
+
+                argElem.blur();
+
+            });
+
+        }
+
+        _rightClick(argElem) {
+
+            argElem.addEventListener('contextmenu', () => {
+
+                event.preventDefault();
+
+                settings.notes.removeChild(argElem);
+
+            });
+
+        }
+
+        _focus(argElem) {
+
+            argElem.addEventListener('focus', () => {
+
+                const index = this._zIndex.change(this._num);
+
+                argElem.style.zIndex = index;
+
+            });
+
+        }
+
+    }
+
+    new Notes();
 
 })();
