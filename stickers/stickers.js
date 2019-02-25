@@ -309,5 +309,36 @@
 
     }
 
+    class Install {
+
+        constructor(argMap, argZ, argStorage) {
+
+            this._map = argMap;
+
+            this._zIndex = argZ;
+
+            this._history = argStorage;
+
+            this._start();
+
+        }
+
+        _start() {
+
+            console.log('_start');
+
+            this._history.forEach(elem => {
+
+                console.log(elem);
+
+                new Sticker(this._map, this._zIndex, 0, 0, elem);
+
+            });
+
+        }
+
+    }
+
+
 
 })();
