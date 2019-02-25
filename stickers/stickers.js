@@ -231,6 +231,83 @@
 
     }
 
-  
+    class Save {
+
+        constructor(argMap, argZ, argStorage) {
+
+            this._map = argMap;
+
+            this._zIndex = argZ;
+
+            this._obj = [];
+
+            this._storage = argStorage;
+
+            this._check();
+
+        }
+
+        _check() {
+
+            console.log('_check', this._obj);
+
+            this._map.forEach((elem, i) => {
+
+                if (this._isReal(elem[1])) {
+
+                    let text = elem[1].value;
+
+                    let width = elem[1].style.width;
+
+                    let height = elem[1].style.height;
+
+                    let top = elem[1].style.top;
+
+                    let left = elem[1].style.left;
+
+                    let zIndex = this._zIndex.getNum(i);
+
+                    let minZIndex = this._zIndex.getMin();
+
+                    let zForSave = zIndex[0] - minZIndex;
+
+                    let item = this._map.get(i);
+
+                    // console.log('_check', item, i, text, width, height, top, left, zForSave);
+
+                    const obj = {};
+
+                    obj.elem = item;
+                    obj.text = text.trim();
+                    obj.width = width;
+                    obj.height = height;
+                    obj.top = top;
+                    obj.left = left;
+                    obj.zForSave = zForSave;
+
+                    this._obj.push(obj);
+
+                    this._save();
+
+                }
+
+            });
+
+        }
+
+        _save() {
+
+            this._storage.set(this._obj);
+
+        }
+
+        _isReal(argElem) {
+
+            return document.body.contains(argElem);
+
+        }
+
+    }
+
 
 })();
